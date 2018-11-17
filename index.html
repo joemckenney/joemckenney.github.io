@@ -44,6 +44,7 @@
 
         var osc1, osc2, gain;
         document.addEventListener('mousedown', function() {
+          audioCtx.resume();
           gain = gains.shift();
           osc1 = free.shift();
           osc2 = free.shift();
